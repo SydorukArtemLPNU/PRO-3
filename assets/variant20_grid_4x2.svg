@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" font-family="system-ui, Segoe UI, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 15px; font-weight: 700; fill: #111; }
+      .label { font-size: 11px; fill: #222; }
+      .small { font-size: 10px; fill: #333; }
+      .dim { font-size: 9px; fill: #555; }
+      .stroke { fill: none; stroke: #333; stroke-width: 1.2; }
+      .fillA { fill: #e8f4fc; }
+      .fillB { fill: #f5e8fc; }
+      .fillC { fill: #e8fce8; }
+    </style>
+  </defs>
+
+  <text x="460" y="22" text-anchor="middle" class="title">Варіант 20, решітка 4×2: C[87][213] = A[87][319] · B[319][213]</text>
+
+  <text x="100" y="48" text-anchor="middle" class="label">Матриця A (87 × 319)</text>
+  <rect x="30" y="58" width="140" height="200" class="stroke fillA"/>
+  <line x1="30" y1="108.5" x2="170" y2="108.5" class="stroke"/>
+  <line x1="30" y1="159.0" x2="170" y2="159.0" class="stroke"/>
+  <line x1="30" y1="209.5" x2="170" y2="209.5" class="stroke"/>
+  <text x="100" y="88" text-anchor="middle" class="small">A[0]  22×319</text>
+  <text x="100" y="138" text-anchor="middle" class="small">A[1]  22×319</text>
+  <text x="100" y="188" text-anchor="middle" class="small">A[2]  22×319</text>
+  <text x="100" y="238" text-anchor="middle" class="small">A[3]  21×319</text>
+
+  <text x="205" y="165" class="title">×</text>
+
+  <text x="310" y="48" text-anchor="middle" class="label">Матриця B (319 × 213)</text>
+  <rect x="230" y="58" width="160" height="200" class="stroke fillB"/>
+  <line x1="310" y1="58" x2="310" y2="258" class="stroke"/>
+  <text x="270" y="162" text-anchor="middle" class="small">B[0]</text>
+  <text x="270" y="178" text-anchor="middle" class="dim">319×107</text>
+  <text x="350" y="162" text-anchor="middle" class="small">B[1]</text>
+  <text x="350" y="178" text-anchor="middle" class="dim">319×106</text>
+
+  <text x="415" y="165" class="title">=</text>
+
+  <text x="640" y="48" text-anchor="middle" class="label">Матриця C (87 × 213)</text>
+  <rect x="440" y="58" width="240" height="200" class="stroke fillC"/>
+  <line x1="560" y1="58" x2="560" y2="258" class="stroke"/>
+  <line x1="440" y1="108.5" x2="680" y2="108.5" class="stroke"/>
+  <line x1="440" y1="159.0" x2="680" y2="159.0" class="stroke"/>
+  <line x1="440" y1="209.5" x2="680" y2="209.5" class="stroke"/>
+
+  <text x="500" y="88" text-anchor="middle" class="small">C[0][0]  22×107</text>
+  <text x="500" y="102" text-anchor="middle" class="dim">проц. 1</text>
+  <text x="620" y="88" text-anchor="middle" class="small">C[0][1]  22×106</text>
+  <text x="620" y="102" text-anchor="middle" class="dim">проц. 2</text>
+
+  <text x="500" y="138" text-anchor="middle" class="small">C[1][0]  22×107</text>
+  <text x="500" y="152" text-anchor="middle" class="dim">проц. 3</text>
+  <text x="620" y="138" text-anchor="middle" class="small">C[1][1]  22×106</text>
+  <text x="620" y="152" text-anchor="middle" class="dim">проц. 4</text>
+
+  <text x="500" y="188" text-anchor="middle" class="small">C[2][0]  22×107</text>
+  <text x="500" y="202" text-anchor="middle" class="dim">проц. 5</text>
+  <text x="620" y="188" text-anchor="middle" class="small">C[2][1]  22×106</text>
+  <text x="620" y="202" text-anchor="middle" class="dim">проц. 6</text>
+
+  <text x="500" y="238" text-anchor="middle" class="small">C[3][0]  21×107</text>
+  <text x="500" y="252" text-anchor="middle" class="dim">проц. 7</text>
+  <text x="620" y="238" text-anchor="middle" class="small">C[3][1]  21×106</text>
+  <text x="620" y="252" text-anchor="middle" class="dim">проц. 8</text>
+
+  <text x="30" y="295" class="label">Обчислення:</text>
+  <text x="30" y="315" class="small">C[i][j] = A[i] · B[j]   (i = 0..3, j = 0..1)</text>
+  <text x="30" y="335" class="small">Процеси 1–8 — робочі; процес 0 — розсилання даних і збір C (як у методичці).</text>
+  <text x="30" y="358" class="dim">Рис. Поділ матриць для решітки 4×2 (варіант 20).</text>
+</svg>
